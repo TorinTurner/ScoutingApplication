@@ -28,7 +28,4 @@ Choose the suffix appropriate for your target OS.
 See [here](https://github.com/electron-userland/electron-packager#readme) for an explanation of how to modify your packaging settings.
 
 ## Authors
-[Team 3006](https://github.com/torinturner). See [Contributors](https://github.com/torinturner) for further information.
-
-=======
-# Hello World! 
+[Team 3006](https://github.com/torinturner). 
