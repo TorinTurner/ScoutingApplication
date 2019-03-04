@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [<img src="images/header.png" align="center" alt="Team3006">](https://github.com/torinturner)
 
 Written using [Electron](http://electron.atom.io/).
@@ -35,4 +34,3 @@ See [here](https://github.com/electron-userland/electron-packager#readme) for an
 
 =======
 # Hello World! 
->>>>>>> 19474cdbcd0ede3a8e49f86f8400f0b38313f864
