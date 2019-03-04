@@ -40,10 +40,11 @@ body {
     display: none;
 }
 #notes {
+    
     background-image: url('../images/R3yellow-black.png');
-    background-size: cover;
-
-    width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    width: 75%;
     height: 250px;
 }
 #start-position {

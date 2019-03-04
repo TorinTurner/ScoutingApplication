@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font: 14px sans-serif;
+    font: 14px Impact, Charcoal, sans-serif	
+;
 }
 body {
     background: #333;
@@ -38,7 +39,7 @@ option {
 }
 h1 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 10px;
 }
 h2 {

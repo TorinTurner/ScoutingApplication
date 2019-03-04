@@ -1,26 +1,25 @@
-[<img src="images/header.png" align="center" alt="VictiScout">](https://github.com/frc1418/VictiScout)
+[<img src="images/header.png" align="center" alt="Team3006">](https://github.com/torinturner)
 
-Application for FRC scouting. Written using [Electron](http://electron.atom.io/) for easy customization.
+Written using [Electron](http://electron.atom.io/).
 
-Get the newest compiled version [here](https://github.com/frc1418/VictiScout/releases)!
+Get the newest compiled version [here](https://github.com/torinturner)!
 
-![Screenshot](images/screenshot.png)
 
-## Development dependencies
+##  dependencies
 * [Node.js](https://nodejs.org)
 * [npm](https://npmjs.com)
 
 ## Development Installation
-1. `cd` into `VictiScout` directory
+1. `cd` into `3006scout` directory (this can be done by typing `cd ` then drag the folder into term)
 2. Run `npm install` to install node dependencies.
 
 ## Usage in Development
-While in `VictiScout` directory, run
+While in `3006scout` directory, run
 
     npm start
 
-## Packaging
-While in `VictiScout` directory, run
+## NEW Packaging
+While in `3006scout` directory, run
 
     npm run-script package-mac
     npm run-script package-win
@@ -31,7 +30,5 @@ Choose the suffix appropriate for your target OS.
 See [here](https://github.com/electron-userland/electron-packager#readme) for an explanation of how to modify your packaging settings.
 
 ## Authors
-This software was created by [Erik Boesen](https://github.com/ErikBoesen) for [Team 1418](https://github.com/frc1418). See [Contributors](https://github.com/frc1418/VictiScout/graphs/contributors) for further information.
+[Team 3006](https://github.com/torinturner). See [Contributors](https://github.com/torinturner) for further information.
 
-## License
-VictiScout is available under the [MIT License](LICENSE).
