@@ -2,8 +2,6 @@
 
 Written using [Electron](http://electron.atom.io/).
 
-Get the newest compiled version [here](https://github.com/torinturner)!
-
 
 ##  dependencies
 * [Node.js](https://nodejs.org)
