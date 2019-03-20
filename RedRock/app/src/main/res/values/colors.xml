@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 Torin Turner (FRC 3006 RedRockRobotics)
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<!-- TODO replace all Android color resources with custom white/black -->
+<resources>
+    <color name="primary">#212121</color>
+    <color name="primary_dark">#151515</color>
+
+    <color name="secondary">#616161</color>
+    <color name="secondary_dark">#373737</color>
+
+    <color name="accent">#FF7800</color>
+    <color name="accent_dark">#FF7800</color>
+
+    <color name="alliance_red_primary">#ed1c24</color>
+    <color name="alliance_red_primary_dark">#ed1c24</color>
+    <color name="alliance_blue_primary">#0066b3</color>
+    <color name="alliance_blue_primary_dark">#0066b3</color>
+
+    <color name="success">#29C530</color>
+    <color name="error">#DD2112</color>
+
+    <color name="background">#FAFAFA</color>
+    <color name="background_floating">#EEEEEE</color>
+    <color name="background_card">#FFFFFF</color>
+
+    <color name="splash_background">#fafafa</color>
+
+    <color name="navigation_bar">@color/background</color>
+    <color name="navigation_bar_divider">#32000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <color name="black_a60">#96000000</color>
+    <color name="black_a40">#64000000</color>
+
+    <color name="shortcut_background">#F5F5F5</color>
+
+    <color name="card_title_color">@android:color/tertiary_text_light</color>
+    <color name="about_icon_override">@android:color/tertiary_text_light</color>
+
+    <color name="notification_background">@color/primary</color>
+
+    <!--<color name="primary">#fbc02d</color> Old theme
+    <color name="primary_dark">#F9A825</color>
+    <color name="accent">#fdd835</color>-->
+</resources>

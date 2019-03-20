@@ -1,0 +1,33 @@
+<!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 Torin Turner (FRC 3006 RedRockRobotics)
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 12,0.15667728 C 5.4624858,0.15667728 0.15667728,5.462486 0.15667728,12 0.15667728,18.537515 5.4624858,23.843323 12,23.843323 18.537514,23.843323 23.843323,18.537515 23.843323,12 23.843323,5.462486 18.537514,0.15667728 12,0.15667728 Z M 17.329495,16.73733 H 7.2626708 c -1.9659915,0 -3.5529967,-1.587005 -3.5529967,-3.552997 0,-1.965992 1.5870052,-3.5529974 3.5529967,-3.5529974 l 0.1658066,0.011845 C 7.9495835,7.5942841 9.7852985,6.0783388 12,6.0783388 c 2.617374,0 4.737329,2.1199548 4.737329,4.7373292 h 0.592166 c 1.634379,0 2.96083,1.326452 2.96083,2.960831 0,1.634379 -1.326451,2.960831 -2.96083,2.960831 z" />
+</vector>

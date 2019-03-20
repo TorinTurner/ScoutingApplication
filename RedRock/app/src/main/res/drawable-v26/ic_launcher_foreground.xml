@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ MIT License
+  ~
+  ~ Copyright (c) 2019 Torin Turner (FRC 3006 RedRockRobotics)
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportHeight="48.0"
+    android:viewportWidth="48.0">
+
+    <!--<path android:name="test-bg"
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h48v48H0z" />-->
+
+    <path
+        android:name="finish"
+        android:fillAlpha="0.1"
+        android:pathData="M0,0h48v48H0z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="0"
+                android:centerY="0"
+                android:gradientRadius="80"
+                android:type="radial">
+                <item
+                    android:color="#FF5100"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FF5100"
+                    android:offset="0.33" />
+                <item
+                    android:color="#FF5100"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path
+        android:name="long-shadow"
+        android:pathData="M 14.32235,36.741393 25.525002,47.300656 H 47.953441 L 48,11.088277 37.662265,0.01100226 24.69,20.73 12,25.7 l 5.433515,5.073393 z"><!--android:fillColor="@color/primary">-->
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="48"
+                android:endY="48"
+                android:startX="17"
+                android:startY="7"
+                android:type="linear">
+                <item
+                    android:color="#303030"
+                    android:offset="0.0" />
+                <item
+                    android:color="#33303030"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+
+    </path>
+
+    <path
+        android:name="bolt-shadow"
+        android:fillAlpha="1"
+        android:fillColor="#FF5100"
+        android:pathData="M 24.027303,0.01083303 12.399509,25.787936 h 8.07 l -5.76,11.065558 21.91,-16.035558 h -11.53 L 38.061775,0.09894013 Z" />
+
+    <path
+        android:name="bolt"
+        android:pathData="M 30,-0.01 1,25.7 h 8.07 L 14.31,36.4 36.22,20.73 H 24.69 L 7.3,0.01100226 Z"><!--android:fillColor="@color/accent">-->
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="30"
+                android:endY="20"
+                android:startX="30"
+                android:startY="0"
+                android:type="linear">
+                <item
+                    android:color="#FF5100"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FF5100"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+</vector>

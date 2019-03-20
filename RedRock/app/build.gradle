@@ -1,0 +1,123 @@
+/*
+ * MIT License
+ *
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    compileOptions { //Used for a subset of compatible features such as try-with-resources
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.team3006.RedRock"
+        minSdkVersion 16
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 18 //Next public release: 19
+        versionName "2019.1-rc"
+        resConfigs "en"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false //TODO Should I enable this?
+            useProguard false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            versionNameSuffix '-' + getDate() //Append build timestamp to version for debug builds
+
+            ext.enableCrashlytics = false //Disable Crashlytics mapping on debug builds
+
+            //ONLY FOR TESTING - SLOWS DOWN BUILD TIME
+            //minifyEnabled true
+            //useProguard true
+            //shrinkResources true
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false //TODO I shouldn't have to do this
+    }
+}
+
+dependencies { //TODO use the ${thingy}
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    def supportVersion = '28.0.0' //TODO This is no longer supported - migrate to AndroidX
+
+    //Android Support
+    implementation 'com.android.support:support-v4:' + supportVersion
+
+    implementation 'com.android.support:appcompat-v7:' + supportVersion
+    implementation 'com.android.support:cardview-v7:' + supportVersion
+    implementation 'com.android.support:gridlayout-v7:' + supportVersion
+    implementation 'com.android.support:recyclerview-v7:' + supportVersion
+    implementation 'com.android.support:palette-v7:' + supportVersion
+    implementation 'com.android.support:preference-v7:' + supportVersion
+
+    implementation 'com.android.support:preference-v14:' + supportVersion
+
+    implementation 'com.android.support:support-annotations:' + supportVersion
+    implementation 'com.android.support:support-vector-drawable:' + supportVersion
+    implementation 'com.android.support:design:' + supportVersion
+    implementation 'com.android.support:customtabs:' + supportVersion
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Material About, Library Info
+    implementation 'com.github.daniel-stoneuk:material-about-library:2.2.4'
+    implementation 'com.mikepenz:aboutlibraries:6.0.8'
+
+    //OpenCSV
+    implementation('com.opencsv:opencsv:4.1') {
+        //Transitively requires Apache Commons, which necessitates multidex...
+        exclude group: 'commons-beanutils'
+    }
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //Stream Support
+    implementation 'net.sourceforge.streamsupport:streamsupport:1.6.0'
+
+    //Test (unused)
+    //androidTestImplementation 'junit:junit:4.12'
+}
+
+static def getDate() {
+    def df = new SimpleDateFormat("yyyy-MM-dd-HH:mm:ss")
+    df.setTimeZone(TimeZone.getTimeZone("UTC"))
+    return df.format(new Date())
+}
+
+apply plugin: 'com.google.gms.google-services'
