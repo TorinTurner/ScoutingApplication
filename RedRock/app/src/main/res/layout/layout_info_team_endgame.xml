@@ -56,7 +56,7 @@
         app:rowCount="2">
 
         <TextView
-            android:text="Climbed to Level 3"
+            android:text="Climbed to Level 2"
             android:textColor="?android:attr/textColorPrimary"
             android:textSize="22sp"
             app:layout_columnWeight="1" />

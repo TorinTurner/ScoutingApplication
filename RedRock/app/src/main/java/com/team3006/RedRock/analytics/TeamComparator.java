@@ -141,12 +141,12 @@ public enum TeamComparator implements Comparator<TeamWrapper> {
         }
     },
 
-    SORT_LEVEL_3_CLIMB_FREQUENCY("Climbed to Level 3") {
-        public int compare(TeamWrapper o1, TeamWrapper o2) {
-            return Double.compare(ScoutDataStatistics.getPercentage(o1.getDataList(), data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_2),
-                    ScoutDataStatistics.getPercentage(o2.getDataList(), data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_2));
-        }
-    },
+//    SORT_LEVEL_3_CLIMB_FREQUENCY("Climbed to Level 3") {
+//        public int compare(TeamWrapper o1, TeamWrapper o2) {
+//            return Double.compare(ScoutDataStatistics.getPercentage(o1.getDataList(), data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_2),
+//                    ScoutDataStatistics.getPercentage(o2.getDataList(), data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_2));
+//        }
+//    },
 
     SORT_AVERAGE_CLIMB_TIME("Average climbing time") {
         public int compare(TeamWrapper o1, TeamWrapper o2) {

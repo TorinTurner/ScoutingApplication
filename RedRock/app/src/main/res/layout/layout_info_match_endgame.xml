@@ -67,7 +67,7 @@
             android:gravity="right"
             android:textSize="22sp"
             app:layout_columnWeight="7"
-            tools:text="Level 3" />
+            tools:text="Level 2" />
 
         <TextView
             android:text="Climbing time"
