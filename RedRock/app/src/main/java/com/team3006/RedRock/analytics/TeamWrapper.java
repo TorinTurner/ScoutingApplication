@@ -106,9 +106,9 @@ public class TeamWrapper implements Serializable {
             case SORT_LEVEL_2_CLIMB_FREQUENCY:
                 return "Climbed to Level 2 in " + formatter.format(ScoutDataStatistics.getPercentage(dataList,
                         data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_2)) + "% of matches";
-//            case SORT_LEVEL_3_CLIMB_FREQUENCY:
-//                return "Climbed to Level 3 in " + formatter.format(ScoutDataStatistics.getPercentage(dataList,
-//                        data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_3)) + "% of matches";
+            case SORT_LEVEL_3_CLIMB_FREQUENCY:
+                return "Climbed to Level 3 in " + formatter.format(ScoutDataStatistics.getPercentage(dataList,
+                        data -> data.getEndgameClimbLevel() == HabLevel.LEVEL_3)) + "% of matches";
             case SORT_AVERAGE_CLIMB_TIME:
                 return "Climbed in " + ClimbTime.values()[
                         (int) ScoutDataStatistics.getAverage(dataList, data -> data.getEndgameClimbTime().ordinal())];
